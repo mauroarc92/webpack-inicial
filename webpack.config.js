@@ -10,6 +10,9 @@ module.exports = {
     optimization: {
         minimizer: [new OptimizeCssAssetsPlugin()]
     },
+    output: {
+        filename: 'main.[contentHash].js'
+    },
 
     module: {
         rules: [
